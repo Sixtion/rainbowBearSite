@@ -3,29 +3,46 @@
 <head>
 <meta charset="utf-8">
 <title>The Rainbow Bear Cult</title>
+<link rel="stylesheet" type="text/css" href="_css/reset.css">
+<link rel="stylesheet" type="text/css" href="_css/audio.css">
 <link href="_css/styles.css" rel="stylesheet">
 <script type="text/javascript" src="_js/rainbowtext.js"></script>
 </head>
 <body>
 <div>
 	<div>
-		<div class="logo"> <img src="_images/rbc_downsize.png" width="200" height="200" alt=""/></div>
-		<h1 id="r1">The Rainbow Bear Cult</h1>
+		<div class="logo"> <img src="_images/rbc_downsize.png" width="200" height="200" alt="RBC logo" /></div>
+		<audio id="music" preload="true">
+			<source src="_audio/ColorsofTheRainbow.mp3">
+			<source src="_audio/ColorsofTheRainbow.ogg">
+		</audio>
 	</div>
-	<script type="text/javascript">
+	<div id="wrapper"> 
+		<!--Audio Player Interface-->
+		<div class="rainbow" id="audioplayer">
+			<button id="pButton" class="play"></button>
+			<div id="timeline">
+				<div id="playhead"></div>
+			</div>
+		</div>
+	</div>
+	<script src="_js/html5audio.js" type="text/javascript"></script>
+	<h1 id="r1">The Rainbow Bear Cult</h1>
+</div>
+<script type="text/javascript">
 var r1=document.getElementById("r1"); //get span to apply rainbow
 var myRainbowSpan=new RainbowSpan(r1, 0, 360, 255, 50, 18); //apply static rainbow effect
 myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
 </script>
-	<ul class="topnav">
-		<li><a class="active" href="#">Home</a></li>
-		<li><a href="alliesEnemies.html">Allies / Enemies</a></li>
-		<li><a href="faq.html">FAQ</a></li>
-		<li><a href="https://discord.gg/dhWh8mB">Discord</a></li>
-		<li><a href="https://www.vrchat.net/launch?worldId=wrld_25e70bcc-fbf6-49b6-a41b-cb43ad0cb377&amp;instanceId=1~friends(usr_5b97246d-efce-49bd-bfd7-4714becaa088)&amp;ref=vrchat.com">Rainbow World</a></li>
-		<li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a> </li>
-	</ul>
-	<h2 id="r2">Welcome to the Rainbow Bear Cult! We have free real estate!</h2>
+<ul class="topnav">
+	<li><a class="active" href="#">Home</a></li>
+	<li><a href="alliesEnemies.html">Allies / Enemies</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="https://discord.gg/dhWh8mB">Discord</a></li>
+	<li><a href="https://www.vrchat.net/launch?worldId=wrld_25e70bcc-fbf6-49b6-a41b-cb43ad0cb377&amp;instanceId=1~friends(usr_5b97246d-efce-49bd-bfd7-4714becaa088)&amp;ref=vrchat.com">Rainbow World</a></li>
+	<li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a> </li>
+</ul>
+<h2 id="r2">Welcome to the Rainbow Bear Cult! We have free real estate!</h2>
 </div>
 <script type="text/javascript">
 var r2=document.getElementById("r2"); //get span to apply rainbow
