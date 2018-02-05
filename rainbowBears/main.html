@@ -32,41 +32,16 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 <body onLoad="MM_preloadImages('_images/play.png')">
-<div>
-	<div>
-		<div class="logo"> <img src="_images/rbc_downsize.png" width="200" height="200" alt="RBC logo" /></div>
-		<audio id="music" preload="true">
-			<source src="_audio/ColorsofTheRainbow.mp3">
-			<source src="_audio/ColorsofTheRainbow.ogg">
-		</audio>
-	</div>
-	<div id="wrapper"> 
-		<!--Audio Player Interface-->
-		<div class="rainbow" id="audioplayer">
-			<button id="pButton" class="play"></button>
-			<div id="timeline">
-				<div id="playhead"></div>
-			</div>
-		</div>
-	</div>
-	<script src="_js/html5audio.js" type="text/javascript"></script>
-	<h1 id="r1">The Rainbow Bear Cult</h1>
+
+<h2 id="r2">Welcome to the Rainbow Bear Cult! We have free real estate!</h2>
 </div>
 <script type="text/javascript">
-var r1=document.getElementById("r1"); //get span to apply rainbow
-var myRainbowSpan=new RainbowSpan(r1, 0, 360, 255, 50, 18); //apply static rainbow effect
-myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
+var r2=document.getElementById("r2"); //get span to apply rainbow
+var myRainbowSpan2=new RainbowSpan(r2, 0, 360, 255, 50, 348); //apply static rainbow effect
+myRainbowSpan2.timer=window.setInterval("myRainbowSpan2.moveRainbow()", myRainbowSpan2.speed);
 </script>
-<ul class="topnav">
-	<li><a class="active" href="main.html" target="bottomDisplay">Home</a></li>
-	<li><a href="alliesEnemies.html" target="bottomDisplay">Allies / Enemies</a></li>
-	<li><a href="faq.html" target="bottomDisplay">FAQ</a></li>
-	<li><a href="https://discord.gg/dhWh8mB">Discord</a></li>
-	<li><a href="https://www.vrchat.net/launch?worldId=wrld_25e70bcc-fbf6-49b6-a41b-cb43ad0cb377&amp;instanceId=1~friends(usr_5b97246d-efce-49bd-bfd7-4714becaa088)&amp;ref=vrchat.com">Rainbow World</a></li>
-	<li class="icon"> <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a> </li>
-</ul>
-<iframe src="main.html" name="bottomDisplay" width="100%" style="border: none; height: 568px; width: 100%; " scrolling="no" onload="resizeIframe(this)"></iframe>
-
+<p>Despite being called a cult, we're just a group of fun, random, and helpful people. Our only objective is to have more people join, and to give out free real estate. Yes, it's real. And estate. So join the discord and taste the rainbow waffles.</p>
+</div>
 <script>
 function myFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
